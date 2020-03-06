@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="Assignment">
+    <head>
+        <meta charset="UTF-8">
+        <script src="../angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div ng-controller="foodChecker">
+            <label>Insert food itens separated by commas</label>
+            <br>
+            <input type="text" ng-model="itens">
+            <!-- DOES NOT CONSIDER EMPTY ITEM  -->
+            <br>
+            <button ng-click="getResult();">Get result</button>
+            <br>
+            {{result}}
+        </div>
+      </body>
+</html>
